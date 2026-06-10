@@ -1,0 +1,12 @@
+class Solution {   
+    public boolean palindromeCheck(String s) {
+        //your code goes here
+        int n = s.length();
+        for(int i=0;i<n;i++){
+            if(s.charAt(i) != s.charAt(n-i-1)){
+                return false;
+            } 
+        }
+        return true;
+    }
+}
